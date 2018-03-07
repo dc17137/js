@@ -1,0 +1,116 @@
+a{
+	color:#fff;
+}
+#section_2{
+	width: 100%;
+	height: 530px;
+	padding-top: 120px;
+	background-image: url(../../../images/index/section_2/bg.jpg)
+}
+#section_2 .inner .news{
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	background-color: rgba(40,47,60,0.7);
+	padding: 3px;
+}
+#section_2 .inner .news .carousel{
+	float: left;
+	width: 475px;
+	height: 320px;
+}
+#section_2 .inner .news .carousel ul{
+	width: 475px;
+	height: 320px;
+	position:relative;
+}
+#section_2 .inner .news .carousel ul li{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#section_2 .inner .news .tab{
+	float: left;
+	height: 310px;
+	width: 480px;
+	margin-left:20px;
+	position: relative;
+}
+#section_2 .inner .news .tab #th{
+	height: 59px;
+	width: 480px;
+	overflow: hidden;
+	border-bottom: 1px solid #4b869f;
+}
+#section_2 .inner .news .tab #th::after{
+	content: "";
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	top: 35px;
+	right: 0px;
+	background-image: url(../../../images/index/section_2/more.png);
+	cursor:pointer;
+}
+#section_2 .inner .news .tab #th li{
+	float: left;
+	width:90px;
+	height: 57px;
+	line-height: 57px;
+	text-align: center;
+}
+#section_2 .inner .news .tab #th li a{
+	color:#fff;
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-size: 20px;
+}
+#section_2 .inner .news .tab #th li:hover a{
+	color:#74dcff;
+}
+#section_2 .inner .news .tab #tb{
+	width: 480px;
+	height: 250px;
+	padding-top: 10px;
+}
+#section_2 .inner .news .tab #tb li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+#section_2 .inner .news .tab #tb>li{
+	display: none;
+}
+#section_2 .inner .news .tab #tb>li:first-child{
+	display: block;
+}
+#section_2 .inner .news .tab #tb>li>ul>li span{
+	float: right;
+}
+#section_2 .inner .news .tab #tb>li>ul>li a{
+	width: 480px;
+	height: 40px;
+	display: block;
+}
+#section_2 .inner .news .tab #tb>li>ul>li a:hover{
+	color:#74dcff;
+}
+#section_2 .inner .our{
+	width: 100%;
+	height: 150px;
+}
+#section_2 .inner .our ul{
+	overflow: hidden;
+}
+#section_2 .inner .our ul li{
+	float: left;
+}
+#section_2 .inner .our ul li:nth-child(2){
+	margin-right: -25px;
+}
+#section_2 .inner .our ul li:nth-child(5){
+	margin-left: -10px;
+}

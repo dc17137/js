@@ -1,0 +1,749 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.inner{
+	width: 982px;
+	margin: 0 auto;
+	height: 100%;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*header部分*/
+header{
+	width: 100%;
+	height: 100px;
+}
+header .logo{
+	width: 325px;
+	height: 100px;
+	background:url(images/logo.jpg) no-repeat;
+	float: left;
+	text-indent: -999em;
+}
+header .p1{
+	width: 40px;
+	height: 40px;
+	float: right;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	text-align: center;
+	font-size: 13px;
+	line-height: 17px;
+	margin-top: 32px;
+}
+header .p2{
+	width: 110px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border:1px solid #ddd;
+	font-size: 12px;
+	float: right;
+	margin: 32px 10px 0px;
+	box-sizing:border-box;
+}
+header .p3{
+	width: 110px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	float: right;
+	font-size: 12px;
+	margin-top: 32px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+}
+header p a{
+	color:#aaa;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+header p a:hover{
+	background-color: #ade718;
+}
+/*banner部分*/
+.banner{
+	width: 100%;
+	height: 430px;
+	position: relative;
+}
+.banner #img{
+	width: 100%;
+	height: 430px;
+	position: relative;
+	overflow: hidden;
+}
+.banner ul li{
+	width: 1920px;
+	height: 430px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -960px;
+	display: none;
+}
+.banner ul li:first-child{
+	display: block;
+}
+.banner #lis{
+	width: 150px;
+	height: 18px;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -92px;
+	list-style: none;
+}
+.banner ol{
+	list-style: none;
+}
+.banner ol li{
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right:3px;
+	background: url(images/3.png) 0 -27px no-repeat;
+}
+.banner ol li:last-child{
+	margin-right: 0px;
+}
+.banner ol li.now{
+	width: 64px;
+	height: 18px;
+	background-position: 0 0;
+}
+.banner #left{
+	width: 50px;
+	height: 70px;
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	margin-top: 35px;
+	background:url(images/3.png) 0 -80px no-repeat;
+	display: none;
+}
+.banner #right{
+	width: 50px;
+	height: 70px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background:url(images/3.png) -50px -80px no-repeat;
+	display: none;
+	bottom: 50%;
+	margin-top: 35px;
+}
+/*nav部分*/
+nav{
+	width: 100%;
+	height: 110px;
+	background-color: #252525;
+}
+nav .inner li{
+	width: 139px;
+	height: 110px;
+	border-right:1px solid #000;
+	float: left;
+	display: block;
+	position: relative;
+}
+nav .inner ul li:first-child{
+	border-left:1px solid #000;
+}
+nav .inner li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color:#fff;
+	text-align: center;
+	line-height: 150px;
+	background:url(images/2.jpg) no-repeat;
+	transition:all 0.2s ease 0s;
+	font-size: 14px;
+}
+nav .inner li a:hover{
+	background:url(images/2.jpg) 0 -110px no-repeat;
+	color:#ade718;
+}
+
+nav .inner li a p{
+	width: 36px;
+	height: 36px;
+	background:url(images/nav.png) -2px -237px no-repeat;
+	position: absolute;
+	top: 20px;
+	left:50px;
+	transition:all 0.2s ease 0s;
+}
+nav .inner a:hover p{
+	background:url(images/nav.png) -2px -276px no-repeat;
+}
+nav .inner li:nth-child(2) a p{
+	background-position:-50px -237px;
+}
+nav .inner li:nth-child(2) a:hover p{
+	background-position:-50px -276px;
+}
+nav .inner li:nth-child(3) a p{
+	background-position:-98px -237px;
+}
+nav .inner li:nth-child(3) a:hover p{
+	background-position:-98px -276px;
+}
+nav .inner li:nth-child(4) a p{
+	background-position:-196px -237px;
+}
+nav .inner li:nth-child(4) a:hover p{
+	background-position:-196px -276px;
+}
+nav .inner li:nth-child(5) a p{
+	background-position:-149px -237px;
+}
+nav .inner li:nth-child(5) a:hover p{
+	background-position:-149px -276px;
+}
+nav .inner li:nth-child(6) a p{
+	background-position:-100px -320px;
+}
+nav .inner li:nth-child(6) a:hover p{
+	background-position:-100px -358px;
+}
+nav .inner li:nth-child(7) a p{
+	background-position:-149px -320px;
+}
+nav .inner li:nth-child(7) a:hover p{
+	background-position:-149px -358px;
+}
+/*主内容区域*/
+section{
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #ddd;
+}
+section .content_1{
+	height: 480px;
+}
+section .content_1 p{
+	height: 62px;
+	line-height: 90px;
+}
+section .content_1 #plis{
+	position: relative;
+}
+section .content_1 #plis ol li{
+	position: absolute;
+	top: -28px;
+	left: 0px;
+	list-style:none;
+	display: none;
+}
+section .content_1 #ilis{
+	position:relative;
+}
+section .content_1 #ilis ol{
+	list-style:none;
+}
+section .content_1 #ilis ol li{
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	display: none;
+}
+section .content_1 #ilis ol li div{
+	width: 966px;
+	height:404px;
+	position: relative;
+}
+section .content_1 #ilis ol li div img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+section .content_1 #ilis ol li div p:first-child{
+	position: absolute;
+	top:150px;
+	left: 50px;
+	overflow: hidden;
+	z-index: 1;
+}
+section .content_1 #ilis ol li div p:first-child span{
+	display: block;
+	float: left;
+	padding: 0 14px;
+	margin-right:1px;
+	height: 30px;
+	background-color: #5f0c0c;
+	font-size: 12px;
+	line-height: 30px;
+	color:#fff;
+}
+section .content_1 #ilis ol li div p:first-child span:last-child{
+	margin-right: none;
+}
+section .content_1 #ilis ol li:nth-child(2) div p:first-child span{
+	background-color: #62462e;
+}
+section .content_1 #ilis ol li:nth-child(3) div p:first-child span{
+	background-color: #3c8ec8;
+}
+section .content_1 #ilis ol li:nth-child(4) div p:first-child span{
+	background-color: #223e41;
+}
+section .content_1 #ilis ol li:nth-child(5) div p:first-child span{
+	background-color: #2079c9;
+}
+section .content_1 #ilis ol li:nth-child(6) div p:first-child span{
+	background-color: #373737;
+}
+section .content_1 #ilis ol li:nth-child(7) div p:first-child span{
+	background-color: #1c609e;
+}
+section .content_1 #ilis ol li:nth-child(8) div p:first-child span{
+	background-color: #1584dd;
+}
+section .content_1 #ilis ol li:nth-child(9) div p:first-child span{
+	background-color: #5b91db;
+}
+section .content_1 #ilis ol li div p:nth-child(2){
+	position: absolute;
+	top:200px;
+	left: 50px;
+	width: 225px;
+	height: 120px;
+	color:#fff;
+	line-height: 24px;
+	font-size: 12px;
+	text-indent: 2em;
+	z-index: 1;
+}
+section .content_1 #ilis ol li div p:nth-child(3){
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	width: 230px;
+	height: 30px;
+	z-index: 1;
+}
+section .content_1 #ilis ol li div p:nth-child(3) a{
+	width: 90px;
+	margin-right: 10px;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+	float: left;
+	color: #333;
+	font-size: 14px;
+	background: url(images/2.jpg) 0 -441px no-repeat;
+}
+section .content_1 #ilis ol li div p:nth-child(3) a:hover{
+	background-position: -96px -441px;
+}
+section .content_1 #ilis ol li div .close{
+	width: 31px;
+	height: 31px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background:url(images/close.png) 0 0 no-repeat;
+	z-index: 1;
+}
+section .content_1 #ilis ol li div .close:hover{
+	background-position: 0 -31px;
+}
+section .content_1 ul{
+	height: 416px;
+	border-top:1px solid #ddd;
+	border-right:1px solid #ddd;
+	background-color: #fff;
+}
+section .content_1 ul li{
+	width: 181px;
+	height: 194px;
+	border-left:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	float: left;
+	padding: 7px;
+}
+section .content_1 ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background:url(images/p1.jpg) 0 -194px no-repeat;
+	text-decoration: none;
+	line-height: 360px;
+	font-size: 14px;
+	color:#000;
+	font-weight: bold;
+}
+section .content_1 ul li a:hover{
+	background-position:0 0;
+	text-indent: -999em;
+}
+section .content_1 ul li:nth-child(2) a{
+	background-image: url(images/p2.jpg);
+}
+section .content_1 ul li:nth-child(3) a{
+	background-image: url(images/p3.jpg);
+}
+section .content_1 ul li:nth-child(4) a{
+	background-image: url(images/p4.jpg);
+}
+section .content_1 ul li:nth-child(5) a{
+	background-image: url(images/p5.jpg);
+}
+section .content_1 ul li:nth-child(6) a{
+	background-image: url(images/p6.jpg);
+}
+section .content_1 ul li:nth-child(7) a{
+	background-image: url(images/p7.jpg);
+}
+section .content_1 ul li:nth-child(8) a{
+	background-image: url(images/p8.jpg);
+}
+section .content_1 ul li:nth-child(9) a{
+	background-image: url(images/p9.jpg);
+}
+section .content_1 ul li:nth-child(10) a{
+	background-image: url(images/p10.jpg);
+	background-position:0 0;
+}
+section .content_1 ul li:nth-child(10) a:hover{
+	text-indent: 0em;
+}
+/*PC部分结束*/
+section .content_2{
+	height: 271px;
+	margin-bottom: 31px;
+	position: relative;
+}
+section .content_2 #lbtn{
+	width: 50px;
+	height: 80px;
+	position: absolute;
+	background:url(images/1.png) 0 0 no-repeat;
+	top:50%;
+	left:-60px;
+}
+section .content_2 #lbtn:hover{
+	background-position: 0 -90px;
+}
+section .content_2 #rbtn{
+	width: 50px;
+	height: 80px;
+	position: absolute;
+	background:url(images/1.png) 0 0 no-repeat;
+	top:50%;
+	right:-60px;
+	background-position: -60px 0;
+}
+section .content_2 #rbtn:hover{
+	background-position: -60px -90px;
+}
+section .content_2 p{
+	height: 62px;
+	line-height: 90px;
+}
+section .content_2 div{
+	width: 982px;
+	height: 207px;
+	overflow: hidden;
+	position: relative;
+}
+section .content_2 ul{
+	width: 1374px;
+	height: 207px;
+	border-top:1px solid #ddd;
+	background-color: #fff;
+	border-right:1px solid #ddd;
+	position: absolute;
+	top:0;
+}
+section .content_2 ul li{
+	width: 181px;
+	height: 194px;
+	border-left:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	float: left;
+	padding: 7px;
+}
+section .content_2 ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background:url(images/p1.jpg) 0 -194px no-repeat;
+	text-decoration: none;
+	line-height: 360px;
+	font-size: 14px;
+	color:#000;
+	font-weight: bold;
+}
+section .content_2 ul li a:hover{
+	background-position:0 0;
+	text-indent: -999em;
+}
+section .content_2 ul li:first-child a{
+	background-image: url(images/p11.jpg);
+}
+section .content_2 ul li:nth-child(2) a{
+	background-image: url(images/p12.jpg);
+}
+section .content_2 ul li:nth-child(3) a{
+	background-image: url(images/p13.jpg);
+}
+section .content_2 ul li:nth-child(4) a{
+	background-image: url(images/p14.jpg);
+}
+section .content_2 ul li:nth-child(5) a{
+	background-image: url(images/p15.jpg);
+}
+section .content_2 ul li:nth-child(6) a{
+	background-image: url(images/p16.jpg);
+}
+section .content_2 ul li:nth-child(7) a{
+	background-image: url(images/p17.jpg);
+}
+/*手机部分结束*/
+section .content_3{
+	height: 120px;
+	margin-bottom: 40px;
+}
+section .content_3 div{
+	float: left;
+	height: 100%;
+}
+section .content_3 div>p{
+	height: 31px;
+	line-height: 31px;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px dotted #ddd;
+	position: relative;
+}
+section .content_3 div>p>a{
+	display: block;
+	width: 20px;
+	height: 19px;
+	background:url(images/2.jpg) -166px -50px no-repeat;
+	position: absolute;
+	right:0px;
+	top:6px;
+}
+section .content_3 div>p>span{
+	font-size: 12px;
+	color:#999;
+}
+section .content_3 div ul span{
+	float: right;
+	color:#999;
+	font-size: 12px;
+}
+section .content_3 .btm1{
+	width: 320px;
+}
+section .content_3 .btm1 ul{
+	padding-top: 12px;
+	height: 93px;
+}
+section .content_3 .btm1 ul li{
+	line-height: 24px;
+}
+section .content_3 div a{
+	text-decoration: none;
+	color:#999;
+	font-size: 12px;
+}
+section .content_3 div ul a:hover{
+	text-decoration: underline;
+}
+section .content_3 .btm2{
+	width:365px;
+	margin-right: 35px;
+}
+section .content_3 .btm2 p{
+	width: 335px;
+	margin-left: 30px;
+}
+section .content_3 .btm2 div{
+	width: 150px;
+	height: 100px;
+	background:url(images/b1.png) no-repeat;
+	float: left;
+	margin-top: -5px;
+	z-index: 1;
+}
+section .content_3 .btm2 ul{
+	margin-top:12px;
+}
+section .content_3 .btm2 ul li span {
+	position: relative;
+	right:0;
+	top:4px;
+}
+section .content_3 .btm3{
+	width: 260px;
+	height: 120px;
+	background-color: #fff;
+	position: relative;
+}
+section .content_3 .btm3 img{
+	position: absolute;
+	top:0;
+	left: 0;
+}
+section .content_3 .btm3 ol{
+	width: 26px;
+	height: 11px;
+	position: absolute;
+	bottom: 15px;
+	left: 25px;
+	list-style: none;
+}
+section .content_3 .btm3 ol li{
+	width: 11px;
+	height: 11px;
+	margin-right: 4px;
+	float: left;
+	background: url(images/3.png) -89px -29px no-repeat;
+}
+section .content_3 .btm3 ol li:last-child{
+	margin: 0px;
+}
+section .content_3 .btm3 ol li.cur{
+	background-position: -74px -29px;
+}
+/*主内容区域结束*/
+/*底部*/
+footer{
+	padding-top:35px;
+	height: 157px;
+}
+footer .left{
+	width: 580px;
+	height: 157px;
+	float: left;
+}
+footer .left p{
+	font-size: 12px;
+	color:#999;
+}
+footer .left ul{
+	width: 480px;
+	height: 22px;
+	margin-bottom: 12px;
+}
+footer .left ul li{
+	float: left;
+	color:#999;
+	font-size: 12px;
+}
+footer .left ul li a{
+	color:#999;
+	text-decoration: none;
+}
+footer .left ul li a:hover{
+	text-decoration: underline;
+}
+footer .left ul #op{
+	position: relative;
+}
+footer .left ul #op a:hover{
+	color:#6d9ad1;
+	text-decoration: none;
+}
+footer .left ul #op a span{
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	right: 12px;
+	bottom: 2px;
+	background:url(images/2.jpg) 0 -323px no-repeat;
+}
+footer .left ul #op a:hover span{
+	background-position: 0 -346px;
+}
+footer .left ul #op #list{
+	height: 81px;
+	width: 100px;
+	position: absolute;
+	left: -10px;
+	top: -80px;
+	background-color: #fff;
+	display: none;
+}
+footer .left ul #op #list ol{
+	list-style: none;
+}
+footer .left ul #op #list ol li{
+	width: 100px;
+	height: 27px;
+}
+footer .left ul #op #list ol li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 27px;
+}
+footer .left ul #op #list ol li a:hover{
+	background-color: #6d9ad1;
+	color:#fff;
+}
+footer .right{
+	float: left;
+	width: 400px;
+	height: 192px;
+}
+footer .right>a:first-child{
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: left;
+	background-image: url(images/f1.jpg);
+	margin-left: 10px;
+
+}
+footer .right a:nth-child(2){
+	width: 113px;
+	height: 52px;
+	display: block;
+	float: left;
+	background-image: url(images/f2.jpg);
+	margin-left: 10px;
+	margin-top: -3px;
+}
+footer .right div{
+	width: 227px;
+	height: 45px;
+	float: left;
+	background-image: url(images/f3.jpg);
+	margin-bottom: 20px;
+}
+footer .right div p{
+	font-size: 12px;
+	position: relative;
+	top:-2px;
+	color:#fff;
+}
+footer .right div p a{
+	text-decoration: none;
+	color:#fff;
+	font-weight: bold;
+}
+footer .right a:last-child{
+	width: 200px;
+	height: 20px;
+	display: block;
+	color:#999;
+	text-decoration: none;
+	font-size: 12px;
+	float: right;
+}
+footer .right a:last-child img{
+	float: left;
+}
