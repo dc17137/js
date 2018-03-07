@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>时光网</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div id="app">
+	<component :query="query" :is="view"></component>
+		<footer>
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">购票</a></li>
+				<li><a href="">商城</a></li>
+				<li><a href="">发现</a></li>
+				<li><a href="">我的</a></li>
+			</ul>
+			<div>
+				<span>PC版</span>
+				<span>客户端下载</span>
+				<span>意见反馈</span>
+				<span>帮助中心</span>
+			</div>
+			<p><img src="img/fot_logo.jpg" alt=""></p>
+			<p>Copyright 2006-2017 Mtime.com inc All right reserved</p>
+		</footer>
+	</div>
+	<template id="tpl_home">
+		<section id="home" class="home">
+			<header>
+				<h1><img src="img/logo.jpg" alt=""></h1>
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">购票</a></li>
+					<li><a href="">商城</a></li>
+					<li><a href="">发现</a></li>
+				</ul>
+				<span><img src="img/my.jpg" alt=""></span>
+			</header>
+			<div class="search">
+				<a href="">北京<img src="img/more.jpg" alt=""></a>
+				<a href="#/search/">
+					<img src="img/search.jpg" alt="">
+					<span>影片/影院/影人，任你搜</span>
+				</a>
+			</div>
+			<div class="now">
+				<a href="#/now/">正在热映<span><img src="img/more.jpg" alt=""></span></a>
+				<ul>
+					<li v-for="(item,index) in now">
+						<a href="#/detail/">
+							<img :src="'img/home/' + item.url" alt="">
+							<span>{{item.title}}</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="come">
+				<a href="#/come/">即将上映<span><img src="img/more.jpg" alt=""></span></a>
+			</div>
+			<p></p>
+			<div class="news">
+				<a href="#/news/">今日热点</a>
+				<ul>
+					<li v-for="(item,index) in news">
+						<a :href="'#news/' + item.id">
+							<img :src="'img/home/' + item.url" alt="">
+							<div>
+								<p>{{item.title}}</p>
+								<p>{{item.subhead}}</p>
+								<p>{{item.date}}</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</template>
+	<template id="tpl_now">
+		<section id="now">
+			<div class="header">
+				<a href=""><img src="img/more.jpg" alt=""></a>
+				<p>
+					<a href="#/now/">正在上映</a>
+					<a href="#/come/">即将上映</a>
+				</p>
+			</div>
+			<div class="search">
+				<a href="">北京<img src="img/more.jpg" alt=""></a>
+				<a href="#/search/">
+					<img src="img/search.jpg" alt="">
+					<span>影片/影院/影人，任你搜</span>
+				</a>
+			</div>
+			<div class="content">
+				<ul>
+					<li v-for="(item,index) in movie">
+						<a href=""></a>
+						<img :src="'img/now/' + item.url" alt="">
+						<div>
+							<p>{{item.title}} <span>{{item.score}}</span></p>
+							<p>{{item.subhead}}</p>
+							<p><span>3D</span><span>IMAX</span><span>中国巨幕</span></p>
+							<p>{{item.play}}<a href="">购票</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</template>
+	<template id="tpl_come">
+		<section id="come">
+			<div class="header">
+				<a href=""><img src="img/more.jpg" alt=""></a>
+				<p>
+					<a href="#/now/">正在上映</a>
+					<a href="#/come/">即将上映</a>
+				</p>
+			</div>
+			<div class="search">
+				<a href="">北京<img src="img/more.jpg" alt=""></a>
+				<a href="#/search/">
+					<img src="img/search.jpg" alt="">
+					<span>影片/影院/影人，任你搜</span>
+				</a>
+			</div>
+			<div class="car">
+				<p>最受关注</p>
+				<ul>
+					<li v-for="(item,index) in hot">
+						<span>{{item.date}}</span>
+						<a href=""></a>
+						<img :src="'img/come/' + item.url" alt="">
+						<div>
+							<p>{{item.title}}</p>
+							<p>{{item.num}} 人想看</p>
+							<p>导演：{{item.director}}</p>
+							<p>演员：{{item.actor}}</p>
+							<p><a href="">超前预售</a><a href="">预告片</a></p>
+						</div>
+					</li>
+				</ul>
+				<div id="pic">
+					<img src="img/come/a1.jpg" alt="">
+					<img src="img/come/a2.jpg" alt="">
+				</div>
+				<div class="content">
+					<p>即将上映</p>
+					<p>8月</p>
+					<ul>
+						<li v-for="(item,index) in comeing">
+							<span>{{item.date}}</span>
+							<a href=""></a>
+							<img :src="'img/come/' + item.url" alt="">
+							<div>
+								<p>{{item.title}}</p>
+								<p>{{item.num}}人想看</p>
+								<p>{{item.director}}</p>
+								<p><a href="">超前预售</a><a href="">预告片</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</template>
+	<template id="tpl_news">
+		<section>
+			<header>
+				<span></span>
+				<span></span>
+			</header>
+			<p></p>
+			<p>
+				<span></span>
+				<a href=""></a>
+			</p>
+			<img src="" alt="">
+			<p></p>
+		</section>
+	</template>
+	<template id="tpl_search">
+		<header>
+			<span></span>
+			<a href="">
+					<img src="" alt="">
+					<span>影片/影院/影人，任你搜</span>
+			</a>
+			<span></span>
+		</header>
+		<div>
+			<img src="" alt="">
+			<img src="" alt="">
+		</div>
+		<p></p>
+		<div>
+			<ul>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
+	</template>
+	<template id="tpl_detail">
+		<section id="detail">
+			<div v-for="(item,index) in detail">
+				<header class="header">
+					<div>
+						<a href=""><img src="img/more.jpg" alt=""></a>
+						<p></p>
+						<a href=""><img src="img/detail/collection.jpg" alt=""></a>
+						<a href=""><img src="img/detail/share.jpg" alt=""></a>
+					</div>
+				</header>
+				<div class="bg">
+					<img :src="'img/detail/'+ item.url" alt="">
+					<p></p>
+					<span>
+						<img src="img/detail/bg.jpg" alt="">
+					</span>
+				</div>
+				<div class="show">
+					<div>
+						<img :src="'img/detail/'+ item.url" alt="">
+						<span>3D</span>
+						<span>IMAX</span>
+						<span>中国巨幕</span>
+						<p><img src="img/detail/play.jpg" alt=""></p>
+					</div>
+					<div>
+						<p>{{item.title}}</p>
+						<p>{{item.engtitle}}</p>
+						<p>{{item.time}}<span>{{item.score}}</span></p>
+						<p>{{item.type}}</p>
+						<p>{{item.show}}</p>
+						<p><a href="">我想看</a><a href="">我要评分</a></p>
+					</div>
+				</div>
+				<p>{{item.subhead}}</p>
+				<a href="">查影讯/购票</a>
+				<div class="present"><p>{{item.present}}</p></div>
+				<div class="actor">
+					<a href="">39位演职员<span><img src="img/more.jpg" alt=""></span></a>
+					<div class="dir">
+						<p>导演</p>
+						<img :src="'img/detail/' + item.directorurl" alt="">
+						<p>{{item.director}}</p>
+						<p>{{item.engdirector}}</p>
+					</div>
+					<div class="act">
+						<p>演员</p>
+						<ul>
+							<li>
+								<img :src="'img/detail/' + item.actorsturl" alt=""	>
+								<p>{{item.actorst}}</p>
+								<p>{{item.engactorst}}</p>
+								<span><img :src="'img/detail/' + item.actsturl" 	alt=""></span>
+								<p>饰：{{item.actst}}</p>
+							</li>
+							<li>
+								<img :src="'img/detail/' + item.actorndurl" alt=""	>
+								<p>{{item.actornd}}</p>
+								<p>{{item.engactornd}}</p>
+								<span><img :src="'img/detail/' + item.actndurl" 	alt=""></span>
+								<p>饰：{{item.actnd}}</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="send">
+					<p><span>留下我想说的...</span></p>
+					<p>发送</p>
+				</div>
+			</div>
+		</section>
+	</template>
+	<script src="js/vue.js"></script>
+	<script src="js/index.js"></script>
+	<script></script>
+</body>
+</html>

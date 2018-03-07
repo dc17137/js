@@ -1,0 +1,31 @@
+{
+	"errno":0,
+	"data":{
+		"detail":[
+			{
+				"title":"战狼2",
+				"engtitle":"Wolf Warriors II",
+				"url":"00.jpg",
+				"time":"123分钟",
+				"type":"动作/战争",
+				"show":"2017年7月27日中国上映",
+				"score":"7.4",
+				"subhead":"吴京领衔坦克版速度与激情",
+				"present":"冷锋突然被卷入了一场非洲国家叛乱，本可以安全撤离，却因无法忘记曾经为军人的使命，孤身犯险冲回沦陷区，带领身陷屠杀中的同胞和难民，展开生死逃亡。",
+				"director":"吴京",
+				"engdirector":"Jing Wu",
+				"directorurl":"01.jpg",
+				"actorst":"吴京",
+				"engactorst":"Jing Wu",
+				"actorsturl":"02.jpg",
+				"actst":"冷锋",
+				"actsturl":"03.jpg",
+				"actornd":"弗兰克·格里罗",
+				"engactornd":"Frank Gnillo",
+				"actorndurl":"04.jpg",
+				"actnd":"老爹",
+				"actndurl":"05.jpg"
+			}
+		]
+	}
+}
